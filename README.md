@@ -24,12 +24,6 @@ or 300 images in this parser.
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
 - [Usage Examples](#usage-examples)
-<<<<<<< HEAD
-
-=======
-- [Sources](#sources)
-- [Contact Information](#contact-information)
->>>>>>> 1d9b851 (first)
 
 ---
 
@@ -71,7 +65,6 @@ parser = Parser()
 1. Let's say we want to find one cat image. Let's do it!
 
 ```python
-<<<<<<< HEAD
 # Call the "query_search" function - search by query:
 #   the "query" parameter contains the text query
 #   the "limit" parameter defines the desired number of images
@@ -79,12 +72,6 @@ parser = Parser()
 one_cat = parser.query_search(query="cat", limit=1)
 
 # Since the query_search function returns a list, we will extract the zero-th element:
-=======
-
-
-one_cat = parser.query_search(query="cat", limit=1)
-
->>>>>>> 1d9b851 (first)
 one_cat_url = one_cat[0]
 
 ```
@@ -95,13 +82,9 @@ Done! Cat is here:
 2. Let's find 10 similar cat images using the **image_search** function:
 
 ```python
-<<<<<<< HEAD
 # Call the "image_search" function - search by image:
 #   pass the link to the found image through the "url" parameter
 #   set limit to 10
-=======
-
->>>>>>> 1d9b851 (first)
 
 similar_cats = parser.image_search(url=one_cat_url, limit=10)
 
@@ -173,8 +156,5 @@ of urls and the path by which we want to save the images:
 save_images(urls=paintings, dir_path="./images/paintings")
 ```
 
-<<<<<<< HEAD
 Done!
 
-=======
->>>>>>> 1d9b851 (first)
